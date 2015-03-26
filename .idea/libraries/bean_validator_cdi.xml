@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="bean-validator-cdi">
+    <CLASSES>
+      <root url="jar://C:/glassfish4/glassfish/modules/bean-validator-cdi.jar!/" />
+      <root url="jar://C:/glassfish4/glassfish/modules/bean-validator.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

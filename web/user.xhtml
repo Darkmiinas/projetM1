@@ -1,0 +1,58 @@
+<ui:composition template="/WEB-INF/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:a="http://xmlns.jcp.org/jsf/passthrough" xmlns:c="http://java.sun.com/jsf/html">
+    <ui:define name="css">
+        <style type="text/css">
+            .dropzone
+            {
+                border:2px dashed #ccc;
+                width:300px;
+                height:300px;
+                color:#ccc;
+                line-height: 300px;
+                text-align: center;
+            }
+            .dragover
+            {
+                border:2px dashed #000;
+                width:300px;
+                height:300px;
+                line-height: 300px;
+                text-align: center;
+            }
+        </style>
+    </ui:define>
+    <ui:define name="title">
+        mewpipe - Home Page
+    </ui:define>
+
+    <ui:define name="content">
+        <div id="uploads"></div>
+        <div id="dropzone" class="dropzone">Drop files to upload</div>
+
+        <script type="text/javascript">
+            document.getElementsByName('body').onload = function(){
+                var dropzone = document.getElementById('dropzone');
+
+                /*dropzone.ondrop = function(e){
+                 //e.preventDefault();
+                 }*/
+
+                dropzone.ondragover = function(){
+                    this.className = "dragover";
+                    console.log('lol');
+                    return false;
+                }
+
+                dropzone.ondragleave = function(){
+                    console.log('lel');
+                    this.className = "dropzone";
+                }
+            }
+
+
+        </script>
+    </ui:define>
+</ui:composition>

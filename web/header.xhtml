@@ -1,0 +1,30 @@
+<nav xmlns:c="http://java.sun.com/jsp/jstl/core"
+     xmlns:h="http://java.sun.com/jsf/html">
+    <div class="icon"></div>
+    <span id="menu">
+        <h:form>
+            <span class="menu">
+                <h:commandLink action="#{globalController.indexPage()}" value="Home" />
+            </span>
+            <c:if test="${empty sessionScope.user}">
+                <span class="menu">
+                    <h:commandLink action="#{userController.createAccountPage()}" value="Register" />
+                </span>
+                <span class="menu">
+                        <h:commandLink action="#{globalController.connectPage()}" value="Log In" />
+                </span>
+            </c:if>
+            <c:if test="${!empty sessionScope.user}">
+                <span class="menu">
+                    <h:commandLink action="#{userController.myChannelPage()}" value="Profile" />
+                </span>
+                <span class="menu">
+                    <h:commandLink action="#{userController.logout()}" value="Logout" />
+                </span>
+                <span class="menu">
+                    <h:commandLink action="#{userController.logout()}" value="Logout" />
+                </span>
+            </c:if>
+        </h:form>
+    </span>
+</nav>

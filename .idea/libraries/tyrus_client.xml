@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="tyrus-client">
+    <CLASSES>
+      <root url="jar://C:/glassfish4/glassfish/modules/tyrus-client.jar!/" />
+      <root url="jar://C:/glassfish4/glassfish/modules/tyrus-container-glassfish-cdi.jar!/" />
+      <root url="jar://C:/glassfish4/glassfish/modules/tyrus-container-servlet.jar!/" />
+      <root url="jar://C:/glassfish4/glassfish/modules/tyrus-core.jar!/" />
+      <root url="jar://C:/glassfish4/glassfish/modules/tyrus-server.jar!/" />
+      <root url="jar://C:/glassfish4/glassfish/modules/tyrus-spi.jar!/" />
+      <root url="jar://C:/glassfish4/glassfish/modules/javax.websocket-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

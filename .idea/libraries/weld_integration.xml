@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="weld-integration">
+    <CLASSES>
+      <root url="jar://C:/glassfish4/glassfish/modules/weld-integration.jar!/" />
+      <root url="jar://C:/glassfish4/glassfish/modules/weld-osgi-bundle.jar!/" />
+      <root url="jar://C:/glassfish4/glassfish/modules/javax.inject.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

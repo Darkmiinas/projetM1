@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2472949250">
+    <data-source source="LOCAL" name="NewPersistenceUnit" uuid="75c8382d-e769-41a9-9506-b80a6de2ac84">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/mewpipe</jdbc-url>
+      <user-name>root</user-name>
+      <libraries>
+        <library>
+          <url>file://$PROJECT_DIR$/lib/drivers/mysql_connector_java_5.1.27_bin.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+

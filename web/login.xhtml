@@ -1,0 +1,18 @@
+<ui:composition template="/WEB-INF/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    <ui:define name="title">
+        mewpipe - Sign In
+    </ui:define>
+    <ui:define name="content">
+        <h:form>
+            <h:inputText value="#{userController.pseudo}" a:placeholder="Put your login here" required="true"/>
+            <br/>
+            <h:inputSecret value="#{userController.password}" a:placeholder="Put your password here" required="true"/>
+            <br/>
+            <h:commandButton action="#{userController.login()}" value="Sign In" styleClass="button"/>
+        </h:form>
+    </ui:define>
+</ui:composition>
