@@ -23,7 +23,7 @@ public class VideoDao extends Dao<Video> {
         ArrayList<Predicate> predicates = new ArrayList<Predicate>();
         predicates.add(criteriaBuilder.equal(r.get("user"),getEntityById(id, Video.class)));
         query.where(predicates.toArray(new Predicate[predicates.size()]));
-        List<Video> c = manager.createQuery(query).getResultList();
-        return c;
+        List<Video> c1 = manager.createQuery(query).getResultList();
+        return c1;
     }
 }
